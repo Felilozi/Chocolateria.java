@@ -1,4 +1,4 @@
-//Estos son los productos //
+//Estos son los productos  es un simulador //
 class Producto {
   constructor(nombre, precio,sabor) {
       this.nombre  = nombre.toLowerCase();
@@ -26,7 +26,9 @@ class Detalledecompra {
       this.precio  = parseFloat(precio);
       this.sabor =  sabor;
   }}
+
 //////////////////////funciones //////////////////
+//-----------Primara parte esto es una busqueda que primero se va iterar para que vean los producto --------------------/*
 let busqueda = prompt("Quiere buscar por 'nombre' o por 'precio'" );
 function busquedas(busqueda){ 
   if (busqueda === "nombre"){
@@ -41,6 +43,7 @@ function busquedas(busqueda){
 }}
 
 console.log(busquedas(busqueda))
+//-----------Segunda parte esto te permite elegir las cantidades del producto que elegis y el precio total de tu comprar--------------------/*
 function bcompra(busquedaCatalogo){//"bCompra = buscador de compras "  
   
   const r = catalogo.filter((x) => x.nombre === busquedaCatalogo.toLowerCase())
