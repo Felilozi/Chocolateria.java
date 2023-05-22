@@ -18,7 +18,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Iniciar Chrome para localhost",
-            "url": "file:///C:/java_practica/proyecto1.html",
+            "url": "file:///C:/Users/Lozinski/Desktop/java_practica/proyecto1.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
