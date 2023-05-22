@@ -1,14 +1,4 @@
-// localStorage.setItem("chocolate",JSON.stringify(chocolate) );
-// localStorage.setItem("catalogo",JSON.stringify(catalogo));
 
-// let boton = document.getElementById("btnPrincipal");
-// boton.onclick = () => {
-//     let li = document.createElement("div");
-//     li.innerHTML = `<p> Producto: ${chocolate1.nombre} <p>
-//                         <p> Precio: ${chocolate1.precio} <p>
-//                         <p >${chocolate1.img}</p>`;
-//     document.body.append(li)
-// }col-x
 class Producto {
     constructor(id,nombre, precio,sabor,img) {
         this.id = id
@@ -170,62 +160,3 @@ for (const producto of catalogo) {
         
     });
     
-
-
-
-// Función que renderizaría el carrito
-
-
-
-
-
-//localStorage
-// let boton = document.getElementById("1");
-// boton.addEventListener("clik") = () => { 
-//     localStorage.setItem(catalogo.nombre,JSON.stringify(catalogo.id) ); 
-//     function carritobuscar(parametro){
-//         let variable = catalogo.filter((x) => x.nombre === parametro.toLowerCase() )
-//     }  } 
-/////////////////////-----
-    // let carrito = document.createElement("div");
-    
-    // carrito.innerHTML = `<p> Se agrego al carrito ${chocolate1.nombre} <p>`;
-    // document.body.append(carrito);
-//     localStorage.setItem("Budinlimon",JSON.stringify(budinLimon) ); 
-
-// }
-// let boton1 = document.getElementById("Budin de manzana");
-// boton1.addEventListener("click") = () => {  
-//     localStorage.setItem("budinManzana",JSON.stringify(budinManzana) ); 
-//     function carritobuscar(parametro){
-//         let variable = catalogo.filter((x) => x.nombre === parametro.toLowerCase() )
-//     }  
-
-// }
-// // let miFormulario = document.getElementById("formulario");
-// miFormulario.addEventListener("submit", validarFormulario);
-
-// function validarFormulario(e){
-// //Cancelamos el comportamiento del evento
-// e.preventDefault();
-// let busqueda = prompt("Quiere buscar por 'nombre' o por 'precio'" );
-// function busquedas(busqueda){ 
-//   if (busqueda === "nombre"){
-//     pregunta1 = prompt("Ingrese el nombre del producto que estas buscando");
-//     return  catalogo.filter((x) => x.nombre === pregunta1.toLowerCase() )
-//   }
-//   else if(busqueda === "precio"){
-//     a = Number(prompt("Busqueda por precio ,ingrese el valor inicial"))
-//     b = Number(prompt("Ingrese el valor final"))
-
-//     return catalogo.filter((x) => x.precio > a && x.precio <= b)
-// }}
-
-// console.log(busquedas(busqueda))
-// //Obtenemos el elemento desde el cual se disparó el evento
-// let formulario = e.target
-// //Obtengo el valor del primero hijo <input type="text">
-// console.log(formulario.children[0].value); 
-// //Obtengo el valor del segundo hijo <input type="number"> 
-// console.log(formulario.children[1].value);  
-// }
