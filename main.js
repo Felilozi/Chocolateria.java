@@ -1,17 +1,4 @@
 
-// class Producto {
-//     constructor(id,nombre, precio,sabor,img) {
-//         this.id = id
-//         this.nombre  = nombre;
-//         this.precio  = parseFloat(precio);
-//         this.sabor =  sabor;
-//         this.img = img;
-//         // this.stock = stock;
-//     }
-//     sumaIva() {
-//         this.precio = this.precio * 1.21;//21%
-//     }
-// }
 class ProductoLS {
     constructor(id,nombre, precio,sabor,img,cantidad) {
         this.id = id
@@ -27,42 +14,17 @@ class ProductoLS {
     }
 }
 
-// catalogo =[
-//     new Producto(1,"Barra de chocolate blanco",1200, "blanco","chocolate_blanco.jpg"),
-//     new Producto(2,"Barra de chocolate negro",1300,"negro","chocolate_negro.jpg"),
-//     new Producto(3,"Barra de chocolate leche",1400, "leche","chocolate_leche.jpg"),
-//     new Producto(4,"Budin de naranja",700, "naranja","Budin_de_naranja.jpg"), 
-//     new Producto(5,"Budin de manzana",600, "manzana","Budin_de_manzana.jpg"), 
-//     new Producto(6,"Budin de Limon",800, "limon","Budin_de_limon.jpg"),
-// ]
-/////////////////////////Json////////////////////////////
-// const lista2 = document.querySelector('#probando')
-// fetch('./js/productos.json')
-// .then((res) => res.json())
-// .then((data) =>{
-//     data.forEach((productos) =>{
-//         const li = document.createElement('li');
-//         li.innerHTML = `
-//         <h1>${productos.nombre}</h1>
-//         <p>${productos.id}</p>
-//         <p>Codigo del producto:${productos.precio}</p>
-//         <hr/>`
-        
-// // // // // // //         lista2.append(li);
-//     })
-// })
 
-//////Lista de producto//////////////////////////////////
 
 const productoV =$("#productoV")
 const verCarrito = document.getElementById("verCarrito");
 const modalConteiner = document.getElementById("modalConteiner");
 
-//Array con la información a agregar
+
 let carrito = [];// creando un array 
 let catalogo = [];// creando un
 
-//Iteramos el array con for...of
+//Fetch productos
 fetch('./js/productos.json')
 .then((res) => res.json())
 .then((data) =>{
@@ -104,7 +66,7 @@ fetch('./js/productos.json')
             carritoLS.precio += localcarrito.precio;
 
         }
-        // localStorage.setItem(producto.nombre,JSON.stringify({id,nombre,precio,img}=producto) );
+        // local Storge 
         const enjson = JSON.stringify( carritoLS )
         localStorage.setItem(producto.nombre,enjson);
         Swal.fire({
@@ -231,11 +193,8 @@ fetch('./js/productos.json')
                     localStorage.removeItem(el.nombre );
 
                 })
-            // const cerrar = document.getElementById("modalConteiner");
-            // cerrar.style.display= "none"
-            // console.log($("#modalConteiner"))
-            // $("#modalConteiner").style.display= "none"
-            // console.log($("#modalConteiner"))
+            // Cerrar el carrito para arriba 
+
             $("#modalConteiner").css("display", "none");
             let posicion2 = $("#scroll").offset().top;
                     $("html, body").animate({ scrollTop: posicion2 }, 100);
@@ -253,6 +212,6 @@ fetch('./js/productos.json')
         localStorage.setItem("Total",total);
         
 
-
+            
         
     });
