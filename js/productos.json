@@ -1,0 +1,14 @@
+[
+    { "id":1,"nombre":"Barra de chocolate blanco","precio": 1200,"sabor": "blanco","img":"chocolate_blanco.jpg"},
+
+    { "id":2,"nombre":"Barra de chocolate negro","precio": 1300,"sabor":"negro","img":"chocolate_negro.jpg"},
+
+    { "id":3,"nombre":"Barra de chocolate leche","precio": 1400,"sabor": "leche","img":"chocolate_leche.jpg"},
+
+    { "id":4,"nombre":"Budin de naranja","precio": 700,"sabor": "naranja","img":"Budin_de_naranja.jpg"}, 
+
+    {"id":5,"nombre":"Budin de manzana","precio": 600,"sabor": "manzana","img":"Budin_de_manzana.jpg"}, 
+
+    {"id":6,"nombre":"Budin de Limon","precio": 800,"sabor": "limon","img":"Budin_de_limon.jpg"}
+
+]

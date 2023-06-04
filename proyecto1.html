@@ -5,49 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocolateria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" >
     <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 
-<body>
-    <header class="container">
-        <div class="cabeza">
-            <img  class="tamañoLogo"src="./assets/img/chocolates.jpg" alt="">
-            <h1 id="titulo1" > La Cueva del panda</h1>
-        </div>
-
-        
-        <h2 id="titulo" > TORTAS Y CHOCOLATES </h2>
-        <div id="hipervinculo" class="hipervinculos">
-            <ul>             
-                <li class="pagina">Inicio              
-                </li>
-                <li class="pagina">Galeria
-                </li>
-                <li class="pagina">Nosotros
-                </li>
-                <li class="pagina">Contacto
-                </li>
-                <li class="pagina">Importante
-                </li>
-            </ul> 
-        </div>   
-        <h2 class='textocentrado' >Nuestros chocolates</h2>
-        <!--Todo los productos -->
-        <div id="productoV" class="row">
-        <button class="ver-carrito" id="verCarrito">🛒 Fin de la compra</button>            
-        </div>
-        <!--Modal Conteiner -->
-        <div id="modalConteiner" class="modal-conteiner"></div>
-        
-        
+<body class="color-header">
+    <header class="container-fluid  " id="scroll"  >
+        <div class="cabeza padreLogo d-flex justify-content-center">
+            <img   class="tamañoLogo text-center m-2  " src="./assets/img/chocolates.jpg" alt="">
+            <h1 id="titulo1" class="titulo text-center m-5"> Dulce Éxtasis</h1>
         
             
+            
+        </div>
+        <div class="bg-danger"></div>
+
+        <h2 id="titulo" class="titulo h2 text-center m-2" > Tortas Y Chocolates </h2>
+        </header>
+        <main class="container" >
+            <h2 class='textocentrado titulo1 ' >Nuestros Productos</h2>
+            <!--Todo los productos -->
+            <div id="productoV" class="row">
+            <button class="ver-carrito btn btn-warning " id="verCarrito">🛒 Carrito de compra</button>            
+            </div>
+            <!--Modal Conteiner -->
+            <div id="modalConteiner" class="modal-conteiner ">
                 
-        
-        
-    </header>
+            </div>
+
+        </main>
+
+
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="./js/jquery-3.7.0.min.js"></script> -->
     <script src="main.js"></script>
 </body>
 </html>
